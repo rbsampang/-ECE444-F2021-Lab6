@@ -26,7 +26,6 @@ SECRET_KEY = "change_me"
 SQLALCHEMY_DATABASE_URI = os.getenv(
     "DATABASE_URL", f"sqlite:///{Path(basedir).joinpath(DATABASE)}"
 )
-# .replace("://", "ql://", 1)
 SQLALCHEMY_TRACK_MODIFICATIONS = False
 
 
